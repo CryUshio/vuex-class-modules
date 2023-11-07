@@ -2,7 +2,7 @@
 
 This is yet another package to introduce a simple type-safe class style syntax for your vuex modules, inspired by [vue-class-component](https://github.com/vuejs/vue-class-component).
 
-[![npm](https://img.shields.io/npm/v/vuex-class-modules.svg)](https://www.npmjs.com/package/vuex-class-modules)
+[![npm](https://img.shields.io/npm/v/vuex-class-modules.svg)](https://www.npmjs.com/package/@skryu/vuex-class-modules)
 
 ## New
 - Add `created` lifecycle to replace the constructor initialization logic. Constructor initialization will lost `this` bind if you operate within an asynchronous function.

@@ -29,6 +29,12 @@ function moduleDecoratorFactory(moduleOptions?: ModuleOptions) {
     };
     accessor.prototype = Object.create(constructor.prototype);
     accessor.prototype.constructor = accessor;
+
+    /** fix original store name */
+    Object.defineProperty(accessor, "name", {
+      value: constructor.name
+    });
+
     return accessor;
   };
 }
